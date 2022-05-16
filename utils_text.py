@@ -2,6 +2,8 @@ import re
 from corenlp_client import CoreNLP
 from corenlp_client.__corenlp_client import Annotation
 
+# Use local implementations
+# from .corenlp_client.__corenlp_client import CoreNLP, Annotation
 
 def text_process(text):
     annotator = CoreNLP(url="https://corenlp.run", lang="zh")
