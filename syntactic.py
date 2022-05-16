@@ -55,5 +55,10 @@ def getSyntacticIndices(text_dict):
         #     indices[ct + '_RTTR'] = 0
         #     if v:
         #         indices[ct + '_RTTR'] = len(set(v)) / sqrt(len(v))
+    else:
+        indices['TOTAL_RTTR'] = 0.
+        indices['UNIQUE_RTTR'] = 0.
+        indices['UNIQUE_RATIO'] = 0.
+        indices['LOWFREQ_RATIO'] = 0.
 
     return indices
